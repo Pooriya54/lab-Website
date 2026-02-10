@@ -79,3 +79,37 @@ footer {
     padding: 20px 0;
     margin-top: 50px;
 }
+.profile-header {
+    text-align: center;
+    padding: 40px 0;
+    background: #fff;
+    border-bottom: 2px solid #f1f1f1;
+}
+.member-card h4 a {
+    color: #1C39BB;
+    text-decoration: none;
+}
+.member-card h4 a:hover {
+    text-decoration: underline;
+}
+.member-card h4 a {
+    text-decoration: none;
+    color: #1C39BB;
+}
+.member-card h4 a:hover {
+    text-decoration: underline;
+}
+/* Profile Page Specific Styles */
+.profile-header img {
+    width: 300px; /* بزرگتر شدن عکس */
+    height: auto;
+    border-radius: 8px; /* گوشه‌های کمی گرد شده به جای دایره کامل */
+    object-fit: cover;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.profile-header h1 {
+    margin: 10px 0;
+    color: #002b5c;
+}
