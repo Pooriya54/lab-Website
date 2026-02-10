@@ -1,34 +1,76 @@
 <!DOCTYPE html>
-<html lang="fa" dir="rtl">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>آزمایشگاه دانشکده | صفحه اصلی</title>
+    <title>DANA | Experimental Aerodynamics Lab</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <header>
-        <h1>آزمایشگاه تخصصی [دانا]</h1>
+        <div class="header-content">
+            <h1>DANA Laboratory</h1>
+            <h2>Experimental Aerodynamics Lab</h2>
+            <p>Department of Aerospace Engineering, Amirkabir University of Technology</p>
+        </div>
         <nav>
             <ul>
-                <li><a href="#">صفحه اصلی</a></li>
-                <li><a href="#">پژوهش‌ها</a></li>
-                <li><a href="#">اعضا</a></li>
-                <li><a href="#">تماس با ما</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#research">Research</a></li>
+                <li><a href="#members">Members</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section id="about">
-            <h2>درباره آزمایشگاه</h2>
-            <p>این آزمایشگاه با هدف تحقیق در حوزه [آیرودینامیک تجربی] در دانشکده فعالیت می‌کند.</p>
+        <section id="home" class="slider-container">
+            <div class="slider">
+                <div class="slide">
+                    <img src="https://via.placeholder.com/1200x500?text=DANA+Lab+Photo+1" alt="Lab Photo 1">
+                </div>
+            </div>
+            <div class="about-text">
+                <h3>About DANA Lab</h3>
+                <p>DANA Laboratory specializes in experimental aerodynamics research, providing cutting-edge solutions and deep insights into fluid dynamics and aerospace challenges at Amirkabir University of Technology.</p>
+            </div>
+        </section>
+
+        <section id="research" class="content-section">
+            <h2>Research Areas</h2>
+            <div class="grid">
+                <div class="card">
+                    <h4>Wind Tunnel Testing</h4>
+                    <p>Conducting precise aerodynamic measurements using advanced wind tunnel facilities.</p>
+                </div>
+                <div class="card">
+                    <h4>Flow Visualization</h4>
+                    <p>Studying complex flow patterns using state-of-the-art visualization techniques.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="members" class="content-section">
+            <h2>Lab Members</h2>
+            <div class="grid">
+                <div class="member-card">
+                    <img src="https://via.placeholder.com/150" alt="Member">
+                    <h4>Dr. [Name]</h4>
+                    <p>Principal Investigator</p>
+                </div>
+                <div class="member-card">
+                    <img src="https://via.placeholder.com/150" alt="Member">
+                    <h4>Student Name</h4>
+                    <p>PhD Researcher</p>
+                </div>
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>© ۲۰۲۴ - تمامی حقوق برای آزمایشگاه دانشکده محفوظ است.</p>
+        <p>&copy; 2026 DANA Laboratory - Amirkabir University of Technology. All Rights Reserved.</p>
     </footer>
 
 </body>
