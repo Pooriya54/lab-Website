@@ -112,4 +112,71 @@ footer {
 .profile-header h1 {
     margin: 10px 0;
     color: #002b5c;
+
+}
+/* --- تنظیمات اختصاصی صفحه پروفایل (عکس سمت چپ، متن سمت راست) --- */
+
+.profile-wrapper {
+    display: flex;
+    align-items: flex-start; /* تراز شدن محتوا از بالا */
+    gap: 50px; /* فاصله بین عکس و متن */
+    max-width: 1100px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.profile-left-col {
+    flex: 0 0 350px; /* عرض ثابت کادر عکس */
+}
+
+.profile-page-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* گوشه‌های کمی نرم */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.profile-right-col {
+    flex: 1; /* اشغال باقی‌مانده فضا توسط متون */
+    text-align: left; /* تراز چپ برای متون انگلیسی */
+}
+
+.profile-right-col h1 {
+    margin-top: 0;
+    color: #1C39BB;
+    font-size: 2.2rem;
+}
+
+.designation {
+    font-size: 1.3rem;
+    color: #666;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.profile-details h3 {
+    color: #1C39BB;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+    margin-top: 25px;
+}
+
+/* واکنش‌گرایی برای موبایل: در صفحه کوچک، عکس بالا و متن پایین قرار می‌گیرد */
+@media (max-width: 768px) {
+    .profile-wrapper {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .profile-left-col {
+        flex: 0 0 auto;
+        width: 100%;
+        max-width: 300px;
+    }
+    .profile-right-col {
+        text-align: center;
+    }
 }
