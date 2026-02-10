@@ -180,3 +180,20 @@ footer {
         text-align: center;
     }
 }
+/* Facilities Page Styles */
+.card h3 {
+    color: #1C39BB;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 0.95rem;
+    color: #555;
+    text-align: justify;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    transition: 0.3s;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
