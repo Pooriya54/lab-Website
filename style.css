@@ -112,4 +112,48 @@ footer {
 .profile-header h1 {
     margin: 10px 0;
     color: #002b5c;
+
+}
+/* Profile Layout Styles */
+.profile-layout {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    padding: 30px 0;
+}
+
+.profile-sidebar {
+    flex: 0 0 300px; /* عرض ثابت برای ستون عکس */
+}
+
+.profile-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.profile-main-content {
+    flex: 1; /* اشغال باقی‌مانده فضا توسط متن */
+    text-align: left; /* تراز شدن متن به چپ برای انگلیسی */
+}
+
+.job-title {
+    font-size: 1.4rem;
+    color: #1C39BB;
+    margin-top: -10px;
+    font-weight: bold;
+}
+
+/* برای موبایل که عکس بیاید بالا و متن برود پایین */
+@media (max-width: 768px) {
+    .profile-layout {
+        flex-direction: column;
+        align-items: center;
+    }
+    .profile-sidebar {
+        flex: 0 0 auto;
+        width: 100%;
+        max-width: 300px;
+    }
 }
